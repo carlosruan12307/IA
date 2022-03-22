@@ -1,0 +1,199 @@
+package algoritmo;
+
+import controle.Constantes;
+
+public class Poupador extends ProgramaPoupador {
+	
+	public int acao() {
+		System.out.println(sensor.getPosicao().x);
+		//return (int) (Math.random() * 5);
+		for(int i = 0;i < sensor.getVisaoIdentificacao().length;i++) {
+			if(sensor.getVisaoIdentificacao()[i] == 4 || (sensor.getVisaoIdentificacao()[i] == 3 && sensor.getNumeroDeMoedas() > 0)) {
+				int ver = verLadrao();
+				if(ver != -1) { // se conseguiu ver um ladrao
+					if(worth(custoMP(i),custo(i,ver))) { // ir ate moeda
+						if(i >= 0 && i <= 9 ) {
+							if(possivel(i) == -1) {
+								return 1;
+							}else {
+								return possivel(i);
+							}
+						}
+						if(i >= 10 && i <= 11) {
+							if(possivel(i) == -1) {
+								return 4;
+							}else {
+								return possivel(i);
+							}
+						}
+						if(i >= 12 && i <= 13 ) {
+							if(possivel(i) == -1) {
+								return 3;
+							}else {
+								return possivel(i);
+							}
+						}
+						if(i >= 14 && i <= 23 ) {
+							if(possivel(i) == -1) {
+								return 2;
+							}else {
+								return possivel(i);
+							}
+						}                               // custo do ladrao ate a moeda// quantos passos ele chega la
+					}else { // correr ladrao
+						if(ver >= 0 && ver <= 9) { //  para cima
+							if(possivel(ver) == -1) {
+								return 2;
+							}else {
+								return possivel(ver);
+							}
+								
+							}
+						if(ver >= 10 && ver <= 11) {
+							if(possivel(ver) == -1) {
+								return 3;
+							}else {
+								return possivel(ver);
+							}
+						}
+						if(ver >= 12 && ver <= 13) {
+							if(possivel(ver) == -1) {
+								return 4;
+							}else {
+								return possivel(ver);
+							}
+						}
+							if(ver >= 14 && ver <= 23 ) {
+								if(possivel(ver) == -1) {
+									return 1;
+								}else {
+									return possivel(ver);
+								}
+						
+							
+						}
+						
+						
+						}
+					}else {
+						if(i >= 0 && i <= 9 ) {
+							if(possivel(i) == -1) {
+								return 1;
+							}else {
+								return possivel(i);
+							}
+						}
+						if(i >= 10 && i <= 11) {
+							if(possivel(i) == -1) {
+								return 4;
+							}else {
+								return possivel(i);
+							}
+						}
+						if(i >= 12 && i <= 13 ) {
+							if(possivel(i) == -1) {
+								return 3;
+							}else {
+								return possivel(i);
+							}
+						}
+						if(i >= 14 && i <= 23 ) {
+							if(possivel(i) == -1) {
+								return 2;
+							}else {
+								return possivel(i);
+							}
+						}  
+					}
+				}
+			
+		}
+		return (int) (Math.random() * 5);
+		
+	}
+	
+	public int possivel(int i) {
+		
+		return -1;
+		
+	}
+	public boolean worth(int custoP,int custoL) {
+		if(custoL - custoP <= 0 ) { // correr
+			return false;
+		}
+		return  true;
+	}
+	public int custoMP(int iM) {
+		int custoP1 = Linha(iM) - 3;
+		int custoP2 = Coluna(iM) - 3;
+		int custoT = Math.abs(custoP1) + Math.abs(custoP2);
+		return custoT;
+		
+	}
+	public int custo(int iM, int iL) {
+		int custoP1 = Linha(iM) - Linha(iL);
+		int custoP2 = Coluna(iM) - Coluna(iL);
+		int custoT = Math.abs(custoP1) + Math.abs(custoP2);
+		return custoT;
+	}
+	public int verLadrao() {
+		for(int i = 0;i < sensor.getVisaoIdentificacao().length;i++) {
+			
+				if(sensor.getVisaoIdentificacao()[i] == 200 || sensor.getVisaoIdentificacao()[i] == 210 || sensor.getVisaoIdentificacao()[i] == 220 || sensor.getVisaoIdentificacao()[i] == 230) {
+					return i;
+				}
+				
+			
+		}
+		return -1;
+	}
+	public int Linha(int i) {
+		if (i >= 0 && i <= 4)
+            return 0;
+        if (i >= 5 && i <= 9)
+            return 1;
+        if (i >= 10 && i <= 13)
+            return 2;
+        if (i >= 14 && i <= 18)
+            return 3;
+        if (i >= 19 && i < 23)
+            return 4;
+        return 0;
+	}
+	
+	public int Coluna(int i) {
+		switch (i){
+        case 0:
+        case 5:
+        case 10:
+        case 14:
+        case 19:
+            return 0;
+        case 1:
+        case 6:
+        case 11:
+        case 15:
+        case 20:
+            return 1;
+        case 2:
+        case 7:
+        case 16:
+        case 21:
+            return 2;
+        case 3:
+        case 8:
+        case 12:
+        case 17:
+        case 22:
+            return 3;
+        case 4:
+        case 9:
+        case 13:
+        case 18:
+        case 23:	
+            return 4;
+    }
+    return 0;
+	}
+
+}
