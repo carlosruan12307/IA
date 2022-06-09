@@ -1,0 +1,487 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/ruan/ontologies/2022/5/untitled-ontology-6#"
+     xml:base="http://www.semanticweb.org/ruan/ontologies/2022/5/untitled-ontology-6"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:untitled-ontology-6="http://www.semanticweb.org/ruan/ontologies/2022/5/untitled-ontology-6#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/ruan/ontologies/2022/5/untitled-ontology-6"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/creator -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/creator"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/date -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/date"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/ruan/ontologies/2022/5/untitled-ontology-6#EntradaComoPaciente -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ruan/ontologies/2022/5/untitled-ontology-6#EntradaComoPaciente">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/ruan/ontologies/2022/5/untitled-ontology-6#éPaciente"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ruan/ontologies/2022/5/untitled-ontology-6#HistoricoMedico"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ruan/ontologies/2022/5/untitled-ontology-6#paciente"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ruan</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-06-09T03:37:07Z</dc:date>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ruan/ontologies/2022/5/untitled-ontology-6#SaidaDoutor -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ruan/ontologies/2022/5/untitled-ontology-6#SaidaDoutor">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/ruan/ontologies/2022/5/untitled-ontology-6#éDoutor"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ruan/ontologies/2022/5/untitled-ontology-6#ProntuarioMedico"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ruan/ontologies/2022/5/untitled-ontology-6#Doutor"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ruan</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-06-09T03:42:12Z</dc:date>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ruan/ontologies/2022/5/untitled-ontology-6#temAIDS -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ruan/ontologies/2022/5/untitled-ontology-6#temAIDS">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ruan/ontologies/2022/5/untitled-ontology-6#ManchasVermelhas"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ruan/ontologies/2022/5/untitled-ontology-6#PerdaDePeso"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ruan/ontologies/2022/5/untitled-ontology-6#AIDS"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ruan</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-06-09T04:35:38Z</dc:date>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ruan/ontologies/2022/5/untitled-ontology-6#temBotulismo -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ruan/ontologies/2022/5/untitled-ontology-6#temBotulismo">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ruan/ontologies/2022/5/untitled-ontology-6#Tremores"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ruan/ontologies/2022/5/untitled-ontology-6#Vomitos"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ruan/ontologies/2022/5/untitled-ontology-6#Botulismo"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ruan</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-06-09T04:35:46Z</dc:date>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ruan/ontologies/2022/5/untitled-ontology-6#temGripe -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ruan/ontologies/2022/5/untitled-ontology-6#temGripe">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ruan/ontologies/2022/5/untitled-ontology-6#Calafrios"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ruan/ontologies/2022/5/untitled-ontology-6#Febre"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ruan/ontologies/2022/5/untitled-ontology-6#Gripe"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ruan</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-06-09T03:55:54Z</dc:date>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ruan/ontologies/2022/5/untitled-ontology-6#temTetano -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ruan/ontologies/2022/5/untitled-ontology-6#temTetano">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ruan/ontologies/2022/5/untitled-ontology-6#DificuldadeEngolir"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ruan/ontologies/2022/5/untitled-ontology-6#RigidezMuscular"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ruan/ontologies/2022/5/untitled-ontology-6#Tetano"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ruan</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-06-09T03:55:58Z</dc:date>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ruan/ontologies/2022/5/untitled-ontology-6#éDoutor -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ruan/ontologies/2022/5/untitled-ontology-6#éDoutor">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ruan/ontologies/2022/5/untitled-ontology-6#SaidaDoutor"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ruan/ontologies/2022/5/untitled-ontology-6#Pessoa"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ruan/ontologies/2022/5/untitled-ontology-6#Doutor"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ruan</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-06-09T03:34:23Z</dc:date>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ruan/ontologies/2022/5/untitled-ontology-6#éPaciente -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ruan/ontologies/2022/5/untitled-ontology-6#éPaciente">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ruan/ontologies/2022/5/untitled-ontology-6#EntradaComoPaciente"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ruan/ontologies/2022/5/untitled-ontology-6#Pessoa"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ruan/ontologies/2022/5/untitled-ontology-6#paciente"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ruan</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-06-09T03:34:30Z</dc:date>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/ruan/ontologies/2022/5/untitled-ontology-6#Idade -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ruan/ontologies/2022/5/untitled-ontology-6#Idade">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ruan/ontologies/2022/5/untitled-ontology-6#Bacteria"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ruan/ontologies/2022/5/untitled-ontology-6#Pessoa"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ruan</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-06-09T03:08:25Z</dc:date>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ruan/ontologies/2022/5/untitled-ontology-6#OrigemP -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ruan/ontologies/2022/5/untitled-ontology-6#OrigemP">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ruan/ontologies/2022/5/untitled-ontology-6#Pessoa"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ruan</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-06-09T03:09:58Z</dc:date>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ruan/ontologies/2022/5/untitled-ontology-6#Telefone -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ruan/ontologies/2022/5/untitled-ontology-6#Telefone">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ruan/ontologies/2022/5/untitled-ontology-6#Pessoa"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ruan</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-06-09T03:09:21Z</dc:date>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/ruan/ontologies/2022/5/untitled-ontology-6#AIDS -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ruan/ontologies/2022/5/untitled-ontology-6#AIDS">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ruan/ontologies/2022/5/untitled-ontology-6#Doença"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ruan</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-06-09T04:35:21Z</dc:date>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ruan/ontologies/2022/5/untitled-ontology-6#Bacteria -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ruan/ontologies/2022/5/untitled-ontology-6#Bacteria">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ruan/ontologies/2022/5/untitled-ontology-6#TipoD"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ruan</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-06-09T02:07:05Z</dc:date>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ruan/ontologies/2022/5/untitled-ontology-6#Botulismo -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ruan/ontologies/2022/5/untitled-ontology-6#Botulismo">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ruan/ontologies/2022/5/untitled-ontology-6#Doença"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ruan</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-06-09T04:35:14Z</dc:date>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ruan/ontologies/2022/5/untitled-ontology-6#Calafrios -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ruan/ontologies/2022/5/untitled-ontology-6#Calafrios">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ruan/ontologies/2022/5/untitled-ontology-6#Sintomas"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ruan</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-06-09T02:06:12Z</dc:date>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ruan/ontologies/2022/5/untitled-ontology-6#DificuldadeEngolir -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ruan/ontologies/2022/5/untitled-ontology-6#DificuldadeEngolir">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ruan/ontologies/2022/5/untitled-ontology-6#Sintomas"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ruan</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-06-09T02:07:28Z</dc:date>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ruan/ontologies/2022/5/untitled-ontology-6#Doença -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ruan/ontologies/2022/5/untitled-ontology-6#Doença">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ruan/ontologies/2022/5/untitled-ontology-6#paciente"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ruan</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-06-09T01:58:41Z</dc:date>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ruan/ontologies/2022/5/untitled-ontology-6#Doutor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ruan/ontologies/2022/5/untitled-ontology-6#Doutor">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ruan/ontologies/2022/5/untitled-ontology-6#Pessoa"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ruan</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-06-09T02:47:51Z</dc:date>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ruan/ontologies/2022/5/untitled-ontology-6#Febre -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ruan/ontologies/2022/5/untitled-ontology-6#Febre">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ruan/ontologies/2022/5/untitled-ontology-6#Sintomas"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ruan</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-06-09T02:06:04Z</dc:date>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ruan/ontologies/2022/5/untitled-ontology-6#Gripe -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ruan/ontologies/2022/5/untitled-ontology-6#Gripe">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ruan/ontologies/2022/5/untitled-ontology-6#Doença"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ruan</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-06-09T03:29:28Z</dc:date>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ruan/ontologies/2022/5/untitled-ontology-6#HistoricoMedico -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ruan/ontologies/2022/5/untitled-ontology-6#HistoricoMedico">
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ruan</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-06-09T03:39:16Z</dc:date>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ruan/ontologies/2022/5/untitled-ontology-6#ManchasVermelhas -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ruan/ontologies/2022/5/untitled-ontology-6#ManchasVermelhas">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ruan/ontologies/2022/5/untitled-ontology-6#Sintomas"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ruan</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-06-09T04:34:14Z</dc:date>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ruan/ontologies/2022/5/untitled-ontology-6#PerdaDePeso -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ruan/ontologies/2022/5/untitled-ontology-6#PerdaDePeso">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ruan/ontologies/2022/5/untitled-ontology-6#Sintomas"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ruan</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-06-09T04:34:26Z</dc:date>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ruan/ontologies/2022/5/untitled-ontology-6#Pessoa -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ruan/ontologies/2022/5/untitled-ontology-6#Pessoa">
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ruan</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-06-09T02:03:43Z</dc:date>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ruan/ontologies/2022/5/untitled-ontology-6#ProntuarioMedico -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ruan/ontologies/2022/5/untitled-ontology-6#ProntuarioMedico">
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ruan</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-06-09T03:39:24Z</dc:date>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ruan/ontologies/2022/5/untitled-ontology-6#RigidezMuscular -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ruan/ontologies/2022/5/untitled-ontology-6#RigidezMuscular">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ruan/ontologies/2022/5/untitled-ontology-6#Sintomas"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ruan</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-06-09T02:07:18Z</dc:date>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ruan/ontologies/2022/5/untitled-ontology-6#Sintomas -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ruan/ontologies/2022/5/untitled-ontology-6#Sintomas">
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ruan</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-06-09T03:28:31Z</dc:date>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ruan/ontologies/2022/5/untitled-ontology-6#Tetano -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ruan/ontologies/2022/5/untitled-ontology-6#Tetano">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ruan/ontologies/2022/5/untitled-ontology-6#Doença"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ruan</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-06-09T03:28:52Z</dc:date>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ruan/ontologies/2022/5/untitled-ontology-6#TipoD -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ruan/ontologies/2022/5/untitled-ontology-6#TipoD">
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ruan</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-06-09T02:03:28Z</dc:date>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ruan/ontologies/2022/5/untitled-ontology-6#Tremores -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ruan/ontologies/2022/5/untitled-ontology-6#Tremores">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ruan/ontologies/2022/5/untitled-ontology-6#Sintomas"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ruan</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-06-09T04:35:05Z</dc:date>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ruan/ontologies/2022/5/untitled-ontology-6#Virus -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ruan/ontologies/2022/5/untitled-ontology-6#Virus">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ruan/ontologies/2022/5/untitled-ontology-6#TipoD"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ruan</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-06-09T02:05:35Z</dc:date>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ruan/ontologies/2022/5/untitled-ontology-6#Vomitos -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ruan/ontologies/2022/5/untitled-ontology-6#Vomitos">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ruan/ontologies/2022/5/untitled-ontology-6#Sintomas"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ruan</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-06-09T04:34:57Z</dc:date>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ruan/ontologies/2022/5/untitled-ontology-6#paciente -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ruan/ontologies/2022/5/untitled-ontology-6#paciente">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ruan/ontologies/2022/5/untitled-ontology-6#Pessoa"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ruan</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-06-09T02:04:04Z</dc:date>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/ruan/ontologies/2022/5/untitled-ontology-6#Diagnostico -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ruan/ontologies/2022/5/untitled-ontology-6#Diagnostico">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ruan/ontologies/2022/5/untitled-ontology-6#Bacteria"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/ruan/ontologies/2022/5/untitled-ontology-6#RigidezMuscular"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ruan/ontologies/2022/5/untitled-ontology-6#Marcos -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ruan/ontologies/2022/5/untitled-ontology-6#Marcos">
+        <éDoutor rdf:resource="http://www.semanticweb.org/ruan/ontologies/2022/5/untitled-ontology-6#Diagnostico"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ruan</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-06-09T03:50:52Z</dc:date>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ruan/ontologies/2022/5/untitled-ontology-6#ResultadoExame -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ruan/ontologies/2022/5/untitled-ontology-6#ResultadoExame">
+        <temGripe rdf:resource="http://www.semanticweb.org/ruan/ontologies/2022/5/untitled-ontology-6#Ruan"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ruan</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-06-09T03:52:37Z</dc:date>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ruan/ontologies/2022/5/untitled-ontology-6#Ruan -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ruan/ontologies/2022/5/untitled-ontology-6#Ruan">
+        <éPaciente rdf:resource="http://www.semanticweb.org/ruan/ontologies/2022/5/untitled-ontology-6#Diagnostico"/>
+        <OrigemP rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Brasil</OrigemP>
+        <Telefone rdf:datatype="http://www.w3.org/2001/XMLSchema#string">32</Telefone>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ruan</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-06-09T02:08:11Z</dc:date>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotations
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#Thing">
+        <rdfs:comment>Gripe: Febre, Calafrios
+Aids: ManchasVermelhas, PerdaDePeso
+Tetano: RigidezMuscular, DificuldadeEngoliar
+Botulismo: Vomitos, Tremores</rdfs:comment>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
